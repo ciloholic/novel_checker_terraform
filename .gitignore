@@ -1,0 +1,6 @@
+!.keep
+.envrc
+.idea
+.terraform
+terraform.tfvars
+terraform.tfstate*
