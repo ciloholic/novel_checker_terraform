@@ -14,7 +14,7 @@ help:    ## help
 # ===============================================
 
 init:    ## terraform init
-	@terraform init
+	@terraform init -migrate-state
 plan:    ## terraform plan
 	@terraform plan
 apply:   ## terraform apply
@@ -29,4 +29,4 @@ c:       ## terraform console
 	@terraform console
 update:  ## tfupdate update
 	@docker run -it --rm -v $$(pwd):/tf minamijoyo/tfupdate terraform -r /tf
-	@docker run -it --rm -v $$(pwd):/tf minamijoyo/tfupdate provider aws -r /tf
+	@docker run -it --rm -v $$(pwd):/tf minamijoyo/tfupdate provider google -r /tf
