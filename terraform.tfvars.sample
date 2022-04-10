@@ -3,3 +3,6 @@ project_name = ""
 region       = ""
 zone         = ""
 env          = ""
+
+# member
+email = ""

@@ -14,7 +14,7 @@ help:    ## help
 # ===============================================
 
 init:    ## terraform init
-	@terraform init -migrate-state
+	@terraform init -upgrade
 plan:    ## terraform plan
 	@terraform plan
 apply:   ## terraform apply
