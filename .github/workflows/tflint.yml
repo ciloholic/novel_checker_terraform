@@ -13,7 +13,7 @@ jobs:
       - name: Set environment variables
         run: awk '{print "TERRAFORM_VERSION="$0}' .terraform-version >> $GITHUB_ENV
 
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: ${{ env.TERRAFORM_VERSION }}
 
