@@ -18,7 +18,7 @@ resource "google_project_iam_custom_role" "novel_checker_role" {
 }
 
 resource "google_project_iam_member" "member" {
-  project = data.google_project.main.project_id
+  project = data.google_project.novel_checker.project_id
   role    = google_project_iam_custom_role.novel_checker_role.id
   member  = "user:${local.project_config.email}"
 }
